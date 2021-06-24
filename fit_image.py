@@ -12,7 +12,7 @@ for file in os.listdir(directory):
     img = Image.open('/path/to/image/folder/' + file)
     target_name = filename[0] + ".jpg"
     rgb_image = img.rotate(270).resize((128,128)).convert('RGB')
-    rgb_image.save('/home/tova/Documents/PycharmProjects/GoogleCourseraCourse6Week1/src/' + target_name)
+    rgb_image.save('/path/to/destination/folder' + target_name)
 
 
 
